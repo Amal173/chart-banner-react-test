@@ -1,0 +1,43 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    border: 0px !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    th {
+        padding: 15px;
+        border: 1px solid rgb(219, 216, 216);
+        background-color: #ecebeb;
+
+
+    }
+    tr {
+        border: 1px solid rgb(219, 216, 216);
+
+        &:nth-child(even) {
+            background-color: #ecebeb;
+        }
+    }
+    td {
+        padding: 15px;
+        border: 1px solid rgb(219, 216, 216);
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    table {
+
+        th {
+            padding: 8px;
+        }
+        tr {
+            padding: 8px;
+        }
+        td {
+            padding: 8px;
+        }
+    }
+}

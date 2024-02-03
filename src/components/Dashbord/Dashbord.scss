@@ -1,0 +1,558 @@
+.home_screen {
+    min-height: 100vh;
+    display: flex;
+
+
+    .dashboard {
+        width: 20%;
+        background-color: #20263a;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title_logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            color: white;
+            margin-left: 70px;
+            padding: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 15px 25px;
+                border: 1px solid transparent;
+                border-radius: 15px 0 0 15px;
+                background-color: #161e36;
+
+
+                &:hover {
+                    background-color: white;
+                    color: #20263a;
+                    cursor: pointer;
+                }
+
+                div {
+                    width: 20px;
+                    height: 20px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        .logout {
+            width: 100%;
+            background-color: white;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+
+            button {
+                background: transparent;
+                border: transparent;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                p {
+                    margin: 0;
+                    color: #e45e5e;
+                }
+
+            }
+        }
+
+    }
+
+    .chart_shower {
+        width: 80%;
+        background: #e8edff;
+        padding: 0 50px;
+        padding-top: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 30px;
+
+        .head {
+            display: flex;
+
+            .wishes {
+                flex: 1;
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                }
+
+                span {
+                    color: rgb(253 164 25);
+                }
+            }
+
+            .hanburger {
+
+                .hanburg_logo {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    display: none;
+
+                    .title_logo {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        .icon {
+                            width: 30px;
+                            height: 30px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .title {
+                            width: 50px;
+                            height: 10px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                }
+
+                i {
+                    color: grey;
+                    font-size: 30px;
+                    position: relative;
+                }
+
+                .hanburger_menu {
+                    position: absolute;
+                    background-color: #161e36;
+                    color: white;
+                    width: 100%;
+                    left: 0;
+                    top: 91px;
+                    display: flex;
+                    justify-content: center;
+                    transition: 1s;
+
+                    .options {
+
+                        ul {
+
+                            display: flex;
+                            flex-direction: column;
+                            gap: 30px;
+                            padding: 0;
+
+
+                            li {
+                                list-style-type: none;
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+                                padding: 5px;
+                                border-radius: 6px;
+
+                                &:hover {
+                                    background-color: white;
+                                    color: #161e36;
+                                }
+
+                                p {
+                                    margin: 0;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .wishes {
+                p {
+                    margin: 0;
+                }
+
+            }
+
+            .profile {
+                display: flex;
+                align-items: center;
+                background-color: white;
+                gap: 10px;
+                border-radius: 10px;
+                padding: 10px;
+
+                .profile_data {
+
+                    h3 {
+                        margin: 0;
+                        font-size: 15px;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+
+        .graph_table {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .graphs {
+                width: 100%;
+                display: flex;
+                gap: 30px;
+
+
+                .lineGraph {
+                    width: 65%;
+                    background-color: white;
+                    border-radius: 15px;
+                    padding: 20px;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+                }
+
+                .pieChart {
+                    width: 35%;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 15px;
+                    justify-content: center;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+
+                    .pie_chart_setter {
+                        width: 100%;
+                    }
+
+                }
+
+
+            }
+
+            .table_profile {
+                display: flex;
+                width: 100%;
+                gap: 25px;
+
+
+                .table {
+                    width: 75%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .pagination {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                .profile {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .home_screen {
+
+        .chart_shower {
+
+            .graph_table {
+
+                .graphs {
+
+                    .pieChart {
+
+                        .pie_chart_setter {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1165px) {
+    .home_screen {
+
+        .dashboard {
+            display: none;
+        }
+
+        .chart_shower {
+            width: 100%;
+            padding: 0;
+
+            .graph_table {
+                padding-top: 100px;
+                .table_profile {
+                    width: unset;
+                    padding: 20px;
+                    justify-content: center;
+
+                    .table {
+                        width: 67%;
+                    }
+
+                    .profile {
+                        width: 25%;
+                    }
+
+                }
+
+                .graphs {
+                    gap: 10px;
+                    justify-content: center;
+                    padding: 0 20px;
+                    width: unset;
+
+                    .lineGraph {
+                        width: 55%;
+                    }
+                }
+            }
+
+            .head {
+                position: fixed;
+                width: 98%;
+                align-items: center;
+                .wishes {
+                    display: flex;
+                    justify-content: center;
+                    color: #e8edff;
+                }
+
+                padding: 15px;
+                background-color: #161e36;
+
+                .hanburger {
+                    .hanburger_menu {
+                        .options {
+                            text-align: center;
+
+                            ul {
+                                li {
+
+                                    background-color: #161e36;
+                                    color: aliceblue;
+
+
+                                }
+                            }
+                        }
+                    }
+
+                    .hanburg_logo {
+                        display: flex;
+
+                        .title_logo {
+                            gap: 10px;
+                            flex-direction: row;
+
+                            .icon {
+                                width: 50px;
+                                height: 50px;
+                            }
+
+                            .title {
+                                width: 70px;
+                                height: 15px;
+                            }
+
+                        }
+                    }
+                }
+
+                .profile {
+                    height: 40px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .home_screen {
+
+        .chart_shower {
+
+            .head {
+
+                .hanburger {
+
+                    .hanburger_menu {
+
+                        .options {
+
+                            ul {
+
+                                li {
+                                    font-size: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .graph_table {
+
+                .graphs {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .lineGraph {
+                        width: 80%;
+                    }
+
+                    .pieChart {
+                        width: 85%;
+
+                        .pie_chart_setter {
+                            width: 65%;
+                            padding: 10px;
+                        }
+                    }
+                }
+
+                .table_profile {
+                    flex-direction: column;
+
+                    .table {
+                        width: 100%;
+
+                    }
+                    .profile{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .home_screen {
+
+        .chart_shower {
+
+            .head {
+
+                .hanburger {
+
+                    i {
+                        font-size: 25px;
+                    }
+
+                    .hanburger_menu {
+                       top: 81px;
+
+                        .options {
+
+                            ul {
+                                gap: 6px;
+
+                                li {
+                                    font-size: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .profile {
+                    padding: 5px;
+                    border-radius: 6px;
+                    gap: 6px;
+                    height: 20px;
+
+                    .profile_data {
+
+                        h3 {
+                            font-size: 8px;
+                        }
+
+                        p {
+                            font-size: 6px;
+                        }
+                    }
+
+                    .profile_img {
+                        width: 25px;
+                        height: 25px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+            .graph_table {
+
+                .graphs {
+
+                    .lineGraph {
+                        padding: 5px;
+                        border-radius: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
